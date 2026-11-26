@@ -17,3 +17,10 @@ checkBoxElement.addEventListener('change' , () => {
     boxElement.style.backgroundColor = colorField.value;
 });
 
+for(const field of textFieldElements){
+    field.addEventListener('input', EventListenerTextField);
+}
+
+buttonElement.addEventListener('click', () => {
+    boxElement.remove();
+});
